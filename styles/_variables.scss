@@ -24,4 +24,10 @@
   --button-height: 68px;
 
   --transition-duration: 0.2s;
+  @include desktop {
+    -ms-perspective-origin-y: 50px;
+  }
+  @include mobile {
+    -ms-perspective-origin-y: 30px;
+  }
 }
