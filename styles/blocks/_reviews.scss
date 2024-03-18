@@ -16,6 +16,14 @@
 
   &__slider {
     --reviewsSliderSlideWidth: 606px;
+    .hide-scrollbar {
+      scrollbar-width: none;
+      overflow: -moz-scrollbars-none;
+
+      &::-webkit-scrollbar {
+        width: 0 !important;
+      }
+    }
 
     @include tablet {
       --reviewsSliderSlideWidth: 330px;
